@@ -11,12 +11,16 @@ import org.testng.Assert;
 
 public class NdtvHomePage {
 
-    public final static String CITY_NAME = "Lucknow";
+    public static final  String CITY_NAME = "Lucknow";
+    //public static int tempindegreesactualvalue;
 
     public String degreeCelsiueValueInMap;
 
     public String fahrenHeitValueInMap;
 
+   public String tempindegreesactualvalue;
+
+    public String tempInDegreeOnlyNumbers;
 
     @FindBy(xpath = "//div[@class='topnav_cont']//a[contains(text(),'INDIA')]")
     private WebElement Indialink;
@@ -137,8 +141,9 @@ public class NdtvHomePage {
         this.wait.until(ExpectedConditions.visibilityOf(this.weatherdetailpopupCITY_NAME));
         String popupCITY_NAMEactualvalue = weatherdetailpopupCITY_NAME.getText();
         Assert.assertTrue(popupCITY_NAMEactualvalue.contains(CITY_NAME));
-        String tempindegreesactualvalue = weatherdetailpopuptempindegrees.getText();
+         tempindegreesactualvalue = weatherdetailpopuptempindegrees.getText();
         System.out.println(tempindegreesactualvalue);
+        tempInDegreeOnlyNumbers=getOnlyNumbers(tempindegreesactualvalue);
         Assert.assertEquals(getOnlyNumbers(tempindegreesactualvalue), getOnlyNumbers(degreeCelsiueValueInMap));
         String tempinfarenheitactualvalue = weatherdetailpopuptempinfarenheit.getText();
         System.out.println(tempinfarenheitactualvalue);

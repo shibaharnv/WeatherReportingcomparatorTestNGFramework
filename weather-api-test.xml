@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="weather-comparison suite">
+<test name="weather-api-test">
+    <classes>
+        <class name="com.weather.tests.WeatherComparatorTestCombined" >
+
+        </class>
+
+    </classes>
+</test>
+</suite>
+
+<!--
+
+<methods>
+<include name="WeatherComparatorTestCombined" />
+</methods>-->
