@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.Reporter;
 import org.testng.annotations.*;
 import pages.NdtvHomePage;
 
@@ -41,6 +42,8 @@ public class WeatherComparatorTestCombined extends testbase {
         extent.attachReporter(htmlReporter);
 
     }
+
+
 
   /*  @BeforeTest
 
@@ -140,6 +143,7 @@ public class WeatherComparatorTestCombined extends testbase {
         if(differenceTemp>inputTempearture)
         {
             org.testng.Assert.fail("The temperature difference is more so the testcase is failed");
+           // extent.config(log)
         }
         else
         {

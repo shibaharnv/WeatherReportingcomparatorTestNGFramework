@@ -3,6 +3,7 @@ package extentclasses;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import org.testng.Reporter;
 
 
 public class ExtentManager {
@@ -24,14 +25,11 @@ public class ExtentManager {
 	        extent = new ExtentReports();
 	        extent.attachReporter(htmlReporter);
 	        extent.setSystemInfo("Automation Tester", "Shibahar");
-	   /*     extent.setSystemInfo("Organization", "Way2Automation");
-	        extent.setSystemInfo("Build no", "W2A-1234");*/
+
 
 
 	        return extent;
 	    }
-
-
 
 
 
