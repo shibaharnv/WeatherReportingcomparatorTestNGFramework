@@ -131,18 +131,7 @@
                                <value>${tests}</value>
                            </property>
                        </properties>
-                    <systemPropertyVariables>
 
-                        <enableEmail>YES</enableEmail>
-
-                        <RecipientList>${RecipientList}</RecipientList>
-                        <AuthorURL>${AuthorURL}</AuthorURL>
-                        <PublisherURL>${PublisherURL}</PublisherURL>
-
-                        <RunMode>${RunMode}</RunMode>
-                        <RemoteMode>http://selenium-ingress.dcx360-automation.10.76.224.197.xip.io/wd/hub</RemoteMode>
-
-                    </systemPropertyVariables>
 
                     <testFailureIgnore>true</testFailureIgnore>
 

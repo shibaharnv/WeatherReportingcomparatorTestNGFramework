@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.Reporter;
 import org.testng.annotations.*;
 import pages.NdtvHomePage;
 
@@ -42,16 +41,6 @@ public class WeatherComparatorTestCombined extends testbase {
         extent.attachReporter(htmlReporter);
 
     }
-
-
-
-  /*  @BeforeTest
-
-    public void setUp(){
-        System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "//src//test//resource//drivers//chromedriver.exe");
-        this.driver =new ChromeDriver();
-    }*/
-
 
     @BeforeTest
     @Parameters("browserName")
@@ -143,7 +132,7 @@ public class WeatherComparatorTestCombined extends testbase {
         if(differenceTemp>inputTempearture)
         {
             org.testng.Assert.fail("The temperature difference is more so the testcase is failed");
-           // extent.config(log)
+
         }
         else
         {

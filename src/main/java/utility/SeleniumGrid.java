@@ -1,7 +1,6 @@
 package utility;
 
 import base.testbase;
-import base.testbase;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,10 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
-
-import static base.testbase.getGlobalvalue;
 
 public class SeleniumGrid extends testbase {
 
