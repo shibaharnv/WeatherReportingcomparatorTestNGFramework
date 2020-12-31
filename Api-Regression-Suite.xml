@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="weather-comparison suite">
+    <listeners>
+        <listener class-name="extentclasses.ExtentListeners" />
+    </listeners>
+<test name="weather-api-test">
+    <parameter name="browserName" value="chrome"></parameter>
+    <classes>
+        <class name="com.weather.tests.WeatherComparatorTestCombined" >
+            <methods>
+                <include name="weatherApiTest" />
+            </methods>
+        </class>
+
+    </classes>
+</test>
+</suite>
+
+<!--
+
+<methods>
+<include name="WeatherComparatorTestCombined" />
+</methods>-->
